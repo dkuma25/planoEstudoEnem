@@ -12,4 +12,4 @@ app.post('/calcular', (req, res) => {
   res.send(comb)
 })
 
-app.listen(3333)
+app.listen(process.env.PORT || 3333)
