@@ -1,6 +1,6 @@
 var simplex = require("simplex-solver")
 
-const calcular = (body) => {
+const calcular = (body, type) => {
 
   function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
@@ -16,7 +16,17 @@ const calcular = (body) => {
   }
 
   var comb = []
-  const { difficulty, options, hoursPerDay, startStudyDay } = body
+  var { difficulty , options, hoursPerDay, startStudyDay } = body 
+  if (!difficulty) return {message: "error"}
+
+  if (type === "application/x-www-form-urlencoded") {
+
+    difficulty = JSON.parse(difficulty)
+    options = JSON.parse(options)
+    hoursPerDay = JSON.parse(hoursPerDay)
+    startStudyDay = JSON.parse(startStudyDay)
+
+  }
 
   var numMaterias = difficulty.length
   var sumNotes = 0
