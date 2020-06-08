@@ -37,11 +37,17 @@ A entrada de dados dessa api pode estar tanto no formato ***JSON*** quanto ***x-
 }
 ```
 ***difficulty*** - Se trata do array principal onde estão contidas as matérias e o nivel de dificuldade em cada uma. ***É obrigatório o envio das 13 matérias!***
+
 ***Matéria*** -
+
     ***name*** - Nome da Matéria.
+
     ***note*** - Nivel de dificuldade da matéria que varia entre 1 (menor dificuldade) à 5 (maior dificuldade).
+
 ***options*** - Array de Strings que conterá os dias da semana (em ingles) que serão disponíveis para estudo.
+
 ***hoursPerDay*** - Inteiro que representa o tempo de estudo diário (determinado pelo usuário da aplicação).
+
 ***startStudyDay*** - Inteiro que representa o horário de inicio dos estudos (na versão atual não é utilizado).
 
 ## Dados de saída
@@ -66,9 +72,15 @@ Saída para o exemplo acima:
 }
 ```
 ***agenda*** - Se trata do array principal onde conterá os objetos referentes a cada dia da semana e as matéria à serem estudas em cada um.
-***Dia***
+
+***Dia*** -
+
     ***name*** - Nome do dia
+
     ***materias*** - Array contendo as matérias à serem estudas no dia.
+
 ***options*** - Array de Strings que conterá os dias da semana (em ingles) que serão disponíveis para estudo.
+
 ***hoursPerDay*** - Inteiro que representa o tempo de estudo diário (determinado pelo usuário da aplicação).
+
 ***startStudyDay*** - Inteiro que representa o horário de inicio dos estudos (na versão atual não é utilizado).
