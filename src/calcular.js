@@ -77,19 +77,7 @@ const calcular = (body, type) => {
     `m <= ${(hoursPerDay*options.length)*(m.note/sumNotes) >= 1 ? Math.round((hoursPerDay*options.length)*(m.note/sumNotes)): 1}`,
   ]
   var result = options.length * hoursPerDay > 13 ? simplex.maximize(obj, con) : {
-    a: 1,
-    b: 1,
-    c: 1,
-    d: 1,
-    e: 1,
-    f: 1,
-    g: 1,
-    h: 1,
-    i: 1,
-    j: 1,
-    k: 1,
-    l: 1,
-    m: 1
+    a: 1, b: 1, c: 1, d: 1, e: 1, f: 1, g: 1, h: 1, i: 1, j: 1, k: 1, l: 1, m: 1
   }
 
   var message = options.length * hoursPerDay > 13 ? "" : "Algumas máterias ficaram faltando pois a quantidade de tempo para estudo é insuficiente para comportar todas."
