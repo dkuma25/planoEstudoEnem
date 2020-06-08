@@ -40,9 +40,9 @@ A entrada de dados dessa api pode estar tanto no formato ***JSON*** quanto ***x-
 
 ***Matéria*** -
 
-    ***name*** - Nome da Matéria.
+    name - Nome da Matéria.
 
-    ***note*** - Nivel de dificuldade da matéria que varia entre 1 (menor dificuldade) à 5 (maior dificuldade).
+    note - Nivel de dificuldade da matéria que varia entre 1 (menor dificuldade) à 5 (maior dificuldade).
 
 ***options*** - Array de Strings que conterá os dias da semana (em ingles) que serão disponíveis para estudo.
 
@@ -75,9 +75,9 @@ Saída para o exemplo acima:
 
 ***Dia*** -
 
-    ***name*** - Nome do dia
+    name - Nome do dia
 
-    ***materias*** - Array contendo as matérias à serem estudas no dia.
+    materias - Array contendo as matérias à serem estudas no dia.
 
 ***options*** - Array de Strings que conterá os dias da semana (em ingles) que serão disponíveis para estudo.
 
